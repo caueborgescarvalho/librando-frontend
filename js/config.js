@@ -1,5 +1,5 @@
 const CONFIG = {
-  URL: "http://localhost:3000" // eu vou manter a url original pra n quebra o projeto
+  URL: "librando-back-prod.up.railway.app" // eu vou manter a url original pra n quebra o projeto
 };
 
 // bom na teoria já ta configurado
