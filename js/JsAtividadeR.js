@@ -2,9 +2,9 @@
 const letters = [
   { letter: 'A', img: 'gestos/a.JPG', name: "'A'" },
   { letter: 'B', img: 'gestos/b.JPG', name: "'B'" },
-  { letter: 'C', img: 'gestos/c.jpg', name: "'C'" },
-  { letter: 'D', img: 'gestos/D.jpg', name: "'D'" },
-  { letter: 'E', img: 'gestos/E.jpg', name: "'E'" },
+  { letter: 'C', img: 'gestos/c.JPG', name: "'C'" },
+  { letter: 'D', img: 'gestos/D.JPG', name: "'D'" },
+  { letter: 'E', img: 'gestos/E.JPG', name: "'E'" },
   { letter: 'OI', img: 'gestos/oi2.mp4', name: 'Oi' },
   { letter: 'Tchau', img: 'gestos/tchau.mp4', name: "'Tchau'" },
   { letter: 'Sim', img: 'gestos/sim.mp4', name: "'Sim'" },
