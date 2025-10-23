@@ -397,56 +397,6 @@ header h1 {
 
 
 /* ===== Ajustes responsivos ===== */
-@media (max-width: 900px) {
-  .balloon {
-    left: 0;
-    top: auto;
-    position: static;          /* balão desce abaixo do personagem */
-    margin-top: 0.5rem;
-    display: inline-block;
-  }
-
-  header {
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 520px) {
-  header {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .guide-btn {
-    top: auto;
-    bottom: 1rem;              /* guia vai para baixo em telas pequenas */
-  }
-
-  .next-balloon {
-    right: 1rem;
-  }
-}
-
-/* ===== Tipografia extra ===== */
-.guide {
-  font-size: clamp(0.95rem, 1.7vw, 1.25rem);
-  font-weight: bold;
-}
-
-
-
-
-.map-path {
-  position: absolute;
-  inset: 0;         /* top/right/bottom/left: 0 */
-  width: 101.5%;
-  height: 100%;
-  pointer-events: none;  /* não bloqueia cliques nos botões */
-  z-index: 0;            /* atrás (botões já têm z-index maior) */
-}
-
-
-
 @media (max-width: 1600px) {
 
   .character {
@@ -522,19 +472,54 @@ header h1 {
 
 
 
-  .one   { position: absolute; top: 60%;  left: -40%;    transform: translate(-50%, -50%); }
-  .two   { position: absolute; top: 90%;  left: -13%;    transform: translate(-50%, -50%); }
-  .three { position: absolute; top: 120%;  left: -25%;   transform: translate(-50%, -50%); }
-  .four  { position: absolute; top: 140%;  left: 16%;   transform: translate(-50%, -50%); }
-  .five  { position: absolute; top: 115%;  left: 50%;   transform: translate(-50%, -50%); }
-  .six   { position: absolute; top: 85%;  left: 75%;   transform: translate(-50%, -50%); }
-  .seven { position: absolute; top: 105%;  left: 110%;  transform: translate(-50%, -50%); }
+  .one   { position: absolute; top: 60%;  left: -43%;    transform: translate(-50%, -50%); }
+  .two   { position: absolute; top: 90%;  left: -16%;    transform: translate(-50%, -50%); }
+  .three { position: absolute; top: 120%;  left: -43%;   transform: translate(-50%, -50%); }
+  .four  { position: absolute; top: 140%;  left: 13%;   transform: translate(-50%, -50%); }
+  .five  { position: absolute; top: 115%;  left: 47%;   transform: translate(-50%, -50%); }
+  .six   { position: absolute; top: 85%;  left: 72%;   transform: translate(-50%, -50%); }
+  .seven { position: absolute; top: 105%;  left: 107%;  transform: translate(-50%, -50%); }
 
   .next-balloon { 
     display: none;
   }
   
 
+
   header {
     justify-content: space-between;
   }
+
+
+.guide-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;              
+  padding: 1.25rem 2.18rem;   
+  background: #6758C2;
+  color: #fff;
+  border: none;
+  border-radius: 15px;      
+  box-shadow: 3px 3px 0 #ccc;
+  font-weight: 700;
+  font-size: 1.1rem;        
+  cursor: pointer;
+  z-index: 10;       
+  float: right;
+  margin-top: 25px; 
+  margin-right: 15px; /* <<< Adicionado para afastar da borda direita */
+}
+
+
+.bookimg {
+  width: 2rem;   /* aumenta o ícone junto */
+  height: auto;
+}
+
+.guide {
+  font-size: clamp(1.30rem, 2.16vw, 1.66rem);
+  font-weight: 700;
+}
+
+
+}
