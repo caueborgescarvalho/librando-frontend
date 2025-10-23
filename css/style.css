@@ -446,3 +446,95 @@ header h1 {
 }
 
 
+
+@media (max-width: 1600px) {
+
+  .character {
+  position: relative;
+  flex: 1 1 240px;               /* cresce e encolhe, base 240px */
+  max-width: 320px;
+  min-width: 200px;
+}
+
+.character img {
+  width: 110%;
+  height: auto;
+  display: block;
+}
+
+.balloon {
+  position: absolute;
+  top: 8px;
+  left: calc(100% + 0.1rem);
+  background: #e5edff;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  color: #6758C2;
+  font-weight: bold;
+  border: 2px solid #c2d3ff;
+  white-space: nowrap;
+  font-size: clamp(2.2rem, 1.2vw, 2rem);
+
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  left: -10px;              /* ajusta para alinhar com a borda */
+  top: 65%;
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 8px 10px 8px 0;  /* um pouco menor que o before */
+  border-color: transparent #e5edff transparent transparent; /* cor de fundo */
+  z-index: 100;
+}
+
+
+.balloon::before {
+  content: "";
+  position: absolute;
+  left: -13px;              /* mais perto da borda */
+  top: 65%;                 /* centraliza verticalmente */
+  transform: translateY(-50%);
+  border-style: solid;
+  border-width: 10px 12px 10px 0; /* altura menor (10px) e largura maior (12px) */
+  border-color: transparent #c2d3ff transparent transparent;
+  z-index: 100;
+}
+
+
+header {
+  background-color: #6758C2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2.5rem;
+  flex-wrap: wrap;                 /* permite quebrar linha em telas menores */
+}
+
+header h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: clamp(2rem, 5vw, 2.4rem);  /* responsivo */
+}
+
+
+
+  .one   { position: absolute; top: 60%;  left: -40%;    transform: translate(-50%, -50%); }
+  .two   { position: absolute; top: 90%;  left: -13%;    transform: translate(-50%, -50%); }
+  .three { position: absolute; top: 120%;  left: -25%;   transform: translate(-50%, -50%); }
+  .four  { position: absolute; top: 140%;  left: 16%;   transform: translate(-50%, -50%); }
+  .five  { position: absolute; top: 115%;  left: 50%;   transform: translate(-50%, -50%); }
+  .six   { position: absolute; top: 85%;  left: 75%;   transform: translate(-50%, -50%); }
+  .seven { position: absolute; top: 105%;  left: 110%;  transform: translate(-50%, -50%); }
+
+  .next-balloon { 
+    display: none;
+  }
+  
+
+  header {
+    justify-content: space-between;
+  }
