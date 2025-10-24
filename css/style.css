@@ -62,21 +62,7 @@ header h1 {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
-  .daysOfensive {
-    top: -0.3rem;
-    right: -0.15rem; /* ainda mais próximo em tablets */
-    font-size: clamp(0.65rem, 2.5vw, 0.9rem);
-  }
-}
 
-@media (max-width: 480px) {
-  .daysOfensive {
-    top: -0.2rem;
-    right: -0.1rem; /* gruda ainda mais no mobile */
-    font-size: 0.75rem; /* trava o tamanho mínimo */
-  }
-}
 
 
 
