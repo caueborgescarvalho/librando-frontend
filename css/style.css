@@ -383,7 +383,7 @@ header h1 {
 
 
 /* ===== Ajustes responsivos ===== */
-@media (max-width: 1600px) {
+@media (max-width: 1100px) {
 
   .character {
   position: relative;
